@@ -1,5 +1,3 @@
-using Microsoft.OpenApi.Models;
-
 namespace FHIR.WebSite
 {
     public class Program
@@ -18,14 +16,7 @@ namespace FHIR.WebSite
                 })
                 .AddXmlSerializerFormatters();  // 加入 XML 格式的支援(輸出 & 輸入都行)
 
-            builder.Services.AddSwaggerGen(c =>
-            {
-                // 指定支援 JSON 和 XML 格式的輸出
-                c.SupportNonNullableReferenceTypes();
-                //c.IncludeXmlComments("/swagger/v1/swagger.json");
-                // 添加 XML 和 JSON 的回應格式支援
-                c.MapType<string>(() => new OpenApiSchema { Type = "string", Format = "xml" });
-            });
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
