@@ -7,8 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Firely.Fhir.Packages" Version="4.8.0" />
     <PackageReference Include="Hl7.Fhir.Base" Version="5.11.0" />
     <PackageReference Include="Hl7.Fhir.R4" Version="5.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\firely-validator-api\src\Firely.Fhir.Validation.R4\Firely.Fhir.Validation.R4.csproj" />
   </ItemGroup>
 
 </Project>

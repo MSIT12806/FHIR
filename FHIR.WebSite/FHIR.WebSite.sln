@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHIR.Practicce.Console", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHIR.Tools", "..\FHIR.Tools\FHIR.Tools.csproj", "{A7D1A81E-91C7-464A-9196-49CC1A2B3F73}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Firely.Fhir.Validation.Shared", "..\..\firely-validator-api\src\Firely.Fhir.Validation.Shared\Firely.Fhir.Validation.Shared.shproj", "{21BF806C-BBE6-4A33-91F9-BF3AB5F1E70B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firely.Fhir.Validation", "..\..\firely-validator-api\src\Firely.Fhir.Validation\Firely.Fhir.Validation.csproj", "{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firely.Fhir.Validation.Compilation", "..\..\firely-validator-api\src\Firely.Fhir.Validation.Compilation\Firely.Fhir.Validation.Compilation.csproj", "{594FACA5-02C0-45C9-9A73-4602BF10203C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firely.Fhir.Validation.R4", "..\..\firely-validator-api\src\Firely.Fhir.Validation.R4\Firely.Fhir.Validation.R4.csproj", "{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,11 +42,34 @@ Global
 		{A7D1A81E-91C7-464A-9196-49CC1A2B3F73}.FullDebug|Any CPU.Build.0 = Debug|Any CPU
 		{A7D1A81E-91C7-464A-9196-49CC1A2B3F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7D1A81E-91C7-464A-9196-49CC1A2B3F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}.FullDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}.FullDebug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A42106-BA3F-49DF-8243-4F7E14B33BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594FACA5-02C0-45C9-9A73-4602BF10203C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594FACA5-02C0-45C9-9A73-4602BF10203C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594FACA5-02C0-45C9-9A73-4602BF10203C}.FullDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594FACA5-02C0-45C9-9A73-4602BF10203C}.FullDebug|Any CPU.Build.0 = Debug|Any CPU
+		{594FACA5-02C0-45C9-9A73-4602BF10203C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594FACA5-02C0-45C9-9A73-4602BF10203C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}.FullDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}.FullDebug|Any CPU.Build.0 = Debug|Any CPU
+		{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BDB936-4327-4CF5-8B8E-BB89ABBD7E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE79C4A5-3532-49DD-AEF4-5DB4E0BBAE4F}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\firely-validator-api\src\Firely.Fhir.Validation.Shared\Firely.Fhir.Validation.Shared.projitems*{08bdb936-4327-4cf5-8b8e-bb89abbd7e2c}*SharedItemsImports = 5
+		..\..\firely-validator-api\src\Firely.Fhir.Validation.Shared\Firely.Fhir.Validation.Shared.projitems*{21bf806c-bbe6-4a33-91f9-bf3ab5f1e70b}*SharedItemsImports = 13
+		..\..\firely-validator-api\src\Firely.Fhir.Validation.Compilation.Shared\Firely.Fhir.Validation.Compilation.Shared.projitems*{594faca5-02c0-45c9-9a73-4602bf10203c}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
